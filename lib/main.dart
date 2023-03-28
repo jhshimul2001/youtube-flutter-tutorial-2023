@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_flutter_project/flutter%20widget/appbar/appbar.dart';
+import 'package:youtube_flutter_project/flutter%20widget/container/container.dart';
 
 void main() {
   runApp(MyApp());
@@ -42,7 +43,17 @@ class _HomeState extends State<Home> {
                 child: Text("Appbar"),
                 color: Colors.green,
               ),
-            )
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> Containers()));
+                },
+                child: Text("container"),
+                color: Colors.green,
+              ),
+            ),
           ],
         ),
       ),
