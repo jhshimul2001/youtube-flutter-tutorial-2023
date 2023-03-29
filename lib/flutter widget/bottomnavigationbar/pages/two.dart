@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+
+class two extends StatefulWidget {
+  const two({Key? key}) : super(key: key);
+
+  @override
+  State<two> createState() => _twoState();
+}
+
+class _twoState extends State<two> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Center(child: Text("number two page",style: TextStyle(fontSize: 25),)),
+      ),
+    );;
+  }
+}
