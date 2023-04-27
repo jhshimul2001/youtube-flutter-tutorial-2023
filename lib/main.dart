@@ -1,44 +1,73 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_flutter_project/flutter%20widget/DefaultTextStyle%20widget/DefaultTextStyle.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Listview/Listview%20builder/listview_builders.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Listview/dynamic%20listview/dynamic_listview.dart';
+import 'package:youtube_flutter_project/flutter%20widget/Listview/listview.custom/listview.custom.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Listview/listview_separeted/listview_seperated.dart';
+import 'package:youtube_flutter_project/flutter%20widget/RifreshIndicator/rifreshindicator.dart';
+import 'package:youtube_flutter_project/flutter%20widget/Sizebox%20widgt/sizebox_widget.dart';
 import 'package:youtube_flutter_project/flutter%20widget/alert%20dialouge/alert.dart';
+import 'package:youtube_flutter_project/flutter%20widget/animated_container/animated_container.dart';
 import 'package:youtube_flutter_project/flutter%20widget/appbar/appbar.dart';
+import 'package:youtube_flutter_project/flutter%20widget/backdrop_filter/backdrop_filter.dart';
 import 'package:youtube_flutter_project/flutter%20widget/bottomnavigationbar/bottomnavigationbar.dart';
 import 'package:youtube_flutter_project/flutter%20widget/bottomsheet/bottom.dart';
 import 'package:youtube_flutter_project/flutter%20widget/card/card.dart';
+import 'package:youtube_flutter_project/flutter%20widget/checkbox/checkbox.dart';
+import 'package:youtube_flutter_project/flutter%20widget/checkboxtile/checkboxlisttile.dart';
+import 'package:youtube_flutter_project/flutter%20widget/clippath/clippath.dart';
 import 'package:youtube_flutter_project/flutter%20widget/column_row/column_row.dart';
 import 'package:youtube_flutter_project/flutter%20widget/container/container.dart';
 import 'package:youtube_flutter_project/flutter%20widget/container_decoration/container_decoration.dart';
+import 'package:youtube_flutter_project/flutter%20widget/date_format/date_format.dart';
 import 'package:youtube_flutter_project/flutter%20widget/date_time/date_time.dart';
+import 'package:youtube_flutter_project/flutter%20widget/datepicker/date_picker.dart';
+import 'package:youtube_flutter_project/flutter%20widget/dismissible/dismissible.dart';
 import 'package:youtube_flutter_project/flutter%20widget/drawer/drawer.dart';
+import 'package:youtube_flutter_project/flutter%20widget/dropdown/dropdown.dart';
 import 'package:youtube_flutter_project/flutter%20widget/expanded%20widget/expanded.dart';
+import 'package:youtube_flutter_project/flutter%20widget/expension_tile/expansion_tile.dart';
+import 'package:youtube_flutter_project/flutter%20widget/flexible%20widget/flexible_widget.dart';
 import 'package:youtube_flutter_project/flutter%20widget/hero/hero.dart';
 import 'package:youtube_flutter_project/flutter%20widget/image%20widget/image_widget.dart';
+import 'package:youtube_flutter_project/flutter%20widget/imagepicker/imagepicker.dart';
 import 'package:youtube_flutter_project/flutter%20widget/inkwell%20vs%20guesturedetector/ink%20vs%20gues.dart';
 import 'package:youtube_flutter_project/flutter%20widget/liquaid%20swipe/swipe.dart';
 import 'package:youtube_flutter_project/flutter%20widget/listtile/listtile.dart';
 import 'package:youtube_flutter_project/flutter%20widget/mediaquery%20widget/mediaquery.dart';
 import 'package:youtube_flutter_project/flutter%20widget/padding%20and%20margin/padding_margin.dart';
 import 'package:youtube_flutter_project/flutter%20widget/pageview/pageview.dart';
+import 'package:youtube_flutter_project/flutter%20widget/radio%20button/radio_button.dart';
+import 'package:youtube_flutter_project/flutter%20widget/radioListtile/radiolisttile.dart';
+import 'package:youtube_flutter_project/flutter%20widget/richtext/richtext.dart';
 import 'package:youtube_flutter_project/flutter%20widget/setstate/setstate.dart';
 import 'package:youtube_flutter_project/flutter%20widget/simple%20form/simple_form.dart';
 import 'package:youtube_flutter_project/flutter%20widget/singlechildScrolview%20and%20listview%20widget/singlechild%20and%20listview.dart';
+import 'package:youtube_flutter_project/flutter%20widget/slider/slider.dart';
 import 'package:youtube_flutter_project/flutter%20widget/sliverappbar/sliverappbar.dart';
+import 'package:youtube_flutter_project/flutter%20widget/snackbar/snackbar.dart';
 import 'package:youtube_flutter_project/flutter%20widget/stack/stack.dart';
+import 'package:youtube_flutter_project/flutter%20widget/switch/switch.dart';
+import 'package:youtube_flutter_project/flutter%20widget/switchListtiles/swichlisttiles.dart';
 import 'package:youtube_flutter_project/flutter%20widget/tabbar%20with%20fragement/tabbar_with_fragement.dart';
+import 'package:youtube_flutter_project/flutter%20widget/toast/toast.dart';
+import 'package:youtube_flutter_project/flutter%20widget/tooltip/tooltip.dart';
+import 'package:youtube_flutter_project/flutter%20widget/transform/transform.dart';
 import 'package:youtube_flutter_project/flutter%20widget/types%20of%20button/button.dart';
-import 'package:youtube_flutter_project/flutter_10_ui/10th%20ui/calculator.dart';
-import 'package:youtube_flutter_project/flutter_10_ui/11th%20ui/flutter_login_page.dart';
-import 'package:youtube_flutter_project/flutter_10_ui/11th%20ui/home_page.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/1st_ui/stack_image.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/2nd%20ui/propile.dart';
-import 'package:youtube_flutter_project/flutter_10_ui/3rd%20ui/Textfromfirld.dart';
-import 'package:youtube_flutter_project/flutter_10_ui/4th%20ui/login_page.dart';
-import 'package:youtube_flutter_project/flutter_10_ui/5th%20ui/register_page.dart';
-import 'package:youtube_flutter_project/flutter_10_ui/6th%20ui/design_button.dart';
-import 'package:youtube_flutter_project/flutter_10_ui/8th%20ui/login_page.dart';
-import 'package:youtube_flutter_project/flutter_10_ui/9th%20ui/demo_page.dart';
+import 'package:youtube_flutter_project/flutter_10_ui/3rd%20ui/tiktok_ui.dart';
+import 'flutter widget/Background Image/backgroumd_image.dart';
+import 'flutter widget/Clipoval widget/clipoval.dart';
+import 'flutter widget/Cliprrect widget/cliprrect.dart';
+import 'flutter widget/align widget/align_widget.dart';
+import 'flutter widget/flex widget/flex.dart';
+import 'flutter widget/flutterlogu widget/flutterlogu.dart';
+import 'flutter widget/spacer widget/spacer widget.dart';
+
+
+
+
 
 
 void main() {
@@ -56,7 +85,7 @@ class MyApp extends StatelessWidget {
       color: Colors.green,
       home: Home(),
       initialRoute: '/',
-      routes: {Homes.routeName: (ctx) => Homes()},
+     // routes: {Homes.routeName: (ctx) => Homes()},
     );
   }
 }
@@ -361,6 +390,16 @@ class _HomeState extends State<Home> {
                 padding: EdgeInsets.only(top: 30,left: 100,right: 100),
                 child: MaterialButton(
                   onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>ListviewCustoms()));
+                  },
+                  child: Text("Listview custom"),
+                  color: Colors.green,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>Container_decoration()));
                   },
                   child: Text("Container decoration"),
@@ -387,10 +426,362 @@ class _HomeState extends State<Home> {
                   color: Colors.green,
                 ),
               ),
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>date_format()));
+                  },
+                  child: Text("date_format"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>datepicker_timepicker()));
+                  },
+                  child: Text("datepicker and timepicker"),
+                  color: Colors.green,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Imagepickers()));
+                  },
+                  child: Text("Imagepickers"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Snackbar()));
+                  },
+                  child: Text("snackbar"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Toasts()));
+                  },
+                  child: Text("Toasts"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>sliders()));
+                  },
+                  child: Text("sliders"),
+                  color: Colors.green,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Richtexts()));
+                  },
+                  child: Text("Richtext"),
+                  color: Colors.green,
+                ),
+              ),
 
 
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Dropdowns()));
+                  },
+                  child: Text("Dropdowns"),
+                  color: Colors.green,
+                ),
+              ),
 
 
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>dismissible()));
+                  },
+                  child: Text("dismisible"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Checkboxes()));
+                  },
+                  child: Text("Checkboxes"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Swichs()));
+                  },
+                  child: Text("switch"),
+                  color: Colors.green,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Animated_Container()));
+                  },
+                  child: Text("Animated Container"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Expansion_tile()));
+                  },
+                  child: Text("Expansion tile"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Tooltips()));
+                  },
+                  child: Text("tooltips"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Backdrop_filter()));
+                  },
+                  child: Text("backfropfilter"),
+                  color: Colors.green,
+                ),
+              ),
+
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Transforms()));
+                  },
+                  child: Text("Transforms"),
+                  color: Colors.green,
+                ),
+              ),
+
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Radio_button()));
+                  },
+                  child: Text("Radio button"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>RadioListtiles()));
+                  },
+                  child: Text("RadioListtiles"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>CheckboxListtiles()));
+                  },
+                  child: Text("CheckboxListtiles"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> swichListtiles()));
+                  },
+                  child: Text("swichListtiles"),
+                  color: Colors.green,
+                ),
+              ),
+
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> RifreshIndicators()));
+                  },
+                  child: Text("RifreshIndicator"),
+                  color: Colors.green,
+                ),
+              ),
+
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> DefaultTextStyles()));
+                  },
+                  child: Text("DefaultTextStyles"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Background_image()));
+                  },
+                  child: Text("Background_image"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Flexible_widget()));
+                  },
+                  child: Text("Flexible widget"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Flexs()));
+                  },
+                  child: Text("Flex widget"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Aligns()));
+                  },
+                  child: Text("Align widget"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Spacers()));
+                  },
+                  child: Text("Spacer widget"),
+                  color: Colors.green,
+                ),
+              ),
+
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Sizebox_widgets()));
+                  },
+                  child: Text("Sizebox widgets "),
+                  color: Colors.green,
+                ),
+              ),
+
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Flutterlogus()));
+                  },
+                  child: Text("Flutterlogus widget"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Cliprrects()));
+                  },
+                  child: Text("Cliprrect widget"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Clipovals()));
+                  },
+                  child: Text("clipoval widget"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Clippaths()));
+                  },
+                  child: Text("Clippaths widget"),
+                  color: Colors.green,
+                ),
+              ),
 
               //..........................  flutter ui design all class ..........................
 
@@ -407,7 +798,7 @@ class _HomeState extends State<Home> {
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context) =>Login1stui()));
                   },
-                  child: Text("Login1stui",style:TextStyle(fontSize: 24)),
+                  child: Text("Stack ui",style:TextStyle(fontSize: 24)),
                 ),
               ),
               SizedBox(height: 20,),
@@ -423,7 +814,7 @@ class _HomeState extends State<Home> {
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context) =>profiledemo()));
                   },
-                  child: Text("profiledemo",style:TextStyle(fontSize: 24)),
+                  child: Text("profiledemo ui",style:TextStyle(fontSize: 24)),
                 ),
               ),
               SizedBox(height: 20,),
@@ -437,126 +828,14 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.all(Radius.circular(15))
                   ),
                   onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>createac()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) =>Tiktokui()));
                   },
-                  child: Text("Login1stui",style:TextStyle(fontSize: 24)),
-                ),
-              ),
-              SizedBox(height: 20,),
-              Padding(
-                padding: EdgeInsets.only(left: 60.0,right: 60.0),
-                child: MaterialButton(color: Colors.white,
-                  hoverColor: Colors.grey,
-                  splashColor: Colors.greenAccent,
-                  height: 60,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15))
-                  ),
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>MyRegister()));
-                  },
-                  child: Text("Register-page",style:TextStyle(fontSize: 24)),
-                ),
-              ),
-              SizedBox(height: 20,),
-              Padding(
-                padding: EdgeInsets.only(left: 60.0,right: 60.0),
-                child: MaterialButton(color: Colors.white,
-                  hoverColor: Colors.grey,
-                  splashColor: Colors.greenAccent,
-                  height: 60,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15))
-                  ),
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>MyLogin()));
-                  },
-                  child: Text("Login-page",style:TextStyle(fontSize: 24)),
-                ),
-              ),
-              SizedBox(height: 20,),
-              Padding(
-                padding: EdgeInsets.only(left: 60.0,right: 60.0),
-                child: MaterialButton(color: Colors.white,
-                  hoverColor: Colors.grey,
-                  splashColor: Colors.greenAccent,
-                  height: 60,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15))
-                  ),
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>LoginForm()));
-                  },
-                  child: Text("Login and signup button",style:TextStyle(fontSize: 24)),
-                ),
-              ),
-
-              SizedBox(height: 20,),
-              Padding(
-                padding: EdgeInsets.only(left: 60.0,right: 60.0),
-                child: MaterialButton(color: Colors.white,
-                  hoverColor: Colors.grey,
-                  splashColor: Colors.greenAccent,
-                  height: 60,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15))
-                  ),
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>HomePage()));
-                  },
-                  child: Text("home page",style:TextStyle(fontSize: 24)),
+                  child: Text("Tiktok ui",style:TextStyle(fontSize: 24)),
                 ),
               ),
               SizedBox(height: 20,),
 
-              Padding(
-                padding: EdgeInsets.only(left: 60.0,right: 60.0),
-                child: MaterialButton(color: Colors.white,
-                  hoverColor: Colors.grey,
-                  splashColor: Colors.greenAccent,
-                  height: 60,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15))
-                  ),
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>HomePages()));
-                  },
-                  child: Text("demo page",style:TextStyle(fontSize: 24)),
-                ),
-              ),
-              SizedBox(height: 20,),
-              Padding(
-                padding: EdgeInsets.only(left: 60.0,right: 60.0),
-                child: MaterialButton(color: Colors.white,
-                  hoverColor: Colors.grey,
-                  splashColor: Colors.greenAccent,
-                  height: 60,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15))
-                  ),
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>Calculator()));
-                  },
-                  child: Text("Calculator",style:TextStyle(fontSize: 24)),
-                ),
-              ),
-              SizedBox(height: 20,),
-              Padding(
-                padding: EdgeInsets.only(left: 60.0,right: 60.0),
-                child: MaterialButton(color: Colors.white,
-                  hoverColor: Colors.grey,
-                  splashColor: Colors.greenAccent,
-                  height: 60,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15))
-                  ),
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>flutter_login_page()));
-                  },
-                  child: Text("Flutter login page",style:TextStyle(fontSize: 24)),
-                ),
-              ),
-              SizedBox(height: 20,),
+
 
 
             ],
