@@ -12,6 +12,7 @@ class Curved_navigation_bar extends StatefulWidget {
 }
 
 class _Curved_navigation_barState extends State<Curved_navigation_bar> {
+
   var _page = 0;
 
   final pages = [
@@ -23,26 +24,23 @@ class _Curved_navigation_barState extends State<Curved_navigation_bar> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
-      bottomNavigationBar: CurvedNavigationBar(
-          index: 0,
-          color: Colors.white,
-          buttonBackgroundColor: Colors.white,
-          backgroundColor: Colors.blue,
-          animationCurve: Curves
-              .easeInOut,
-          animationDuration: Duration(microseconds: 600),
-          onTap: (index){
-            setState(() {
-              _page = index;
-            });
-          },
-          items: [
-            Icon(Icons.alarm),
-            Icon(Icons.ac_unit),
-            Icon(Icons.account_circle), Icon(Icons.favorite_outlined),
-
-          ]
-      ),
+        bottomNavigationBar: CurvedNavigationBar(
+         index: 0,
+         color: Colors.blue,
+        animationDuration: Duration(seconds: 1),
+        animationCurve: Curves.easeInOut,
+        backgroundColor: Colors.blueGrey.shade200,
+        buttonBackgroundColor: Colors.pink,
+        onTap: (index){
+           setState(() {
+             _page = index;
+           });
+        },
+        items: [
+          Icon(Icons.account_circle),
+          Icon(Icons.camera),
+          Icon(Icons.code),
+        ]),
       body: pages[_page],
     ));
   }

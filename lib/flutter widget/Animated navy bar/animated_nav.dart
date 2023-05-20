@@ -1,79 +1,56 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-
+class Animated_Bottom_navy_var extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _Animated_Bottom_navy_varState createState() =>
+      _Animated_Bottom_navy_varState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _currentIndex = 0;
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
+class _Animated_Bottom_navy_varState extends State<Animated_Bottom_navy_var> {
+  var _currentindex = 0;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Flutter Demo")),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("Animated nav bar"),
+          centerTitle: true,
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
-      bottomNavigationBar: BottomNavyBar(
-        selectedIndex: _currentIndex,
+        bottomNavigationBar: BottomNavyBar(
+            selectedIndex: _currentindex,
         backgroundColor: Colors.blueGrey.shade200,
+        itemCornerRadius: 24,
         animationDuration: Duration(seconds: 1),
-        itemCornerRadius: 22,
-        curve: Curves.easeIn,
-        onItemSelected: (index) => setState(() => _currentIndex = index),
-        items: <BottomNavyBarItem>[
+        curve: Curves.easeInOut,
+        iconSize: 25,
+        showElevation: true,
+        items: [
           BottomNavyBarItem(
-            icon: Icon(Icons.apps),
-            title: Text('Home'),
+              icon: Icon(Icons.home),
+              title: Text("Home"),
             activeColor: Colors.red,
-            textAlign: TextAlign.center,
+            inactiveColor: Colors.blue,
           ),
           BottomNavyBarItem(
-            icon: Icon(Icons.people),
-            title: Text('Users'),
-            activeColor: Colors.purpleAccent,
-            textAlign: TextAlign.center,
+              icon: Icon(Icons.code),
+              title: Text("code")
           ),
           BottomNavyBarItem(
-            icon: Icon(Icons.message),
-            title: Text(
-              'Messages test for mes teset test test ',
-            ),
-            activeColor: Colors.pink,
-            textAlign: TextAlign.center,
+              icon: Icon(Icons.contact_page),
+              title: Text("contact page")
           ),
           BottomNavyBarItem(
-            icon: Icon(Icons.settings),
-            title: Text('Settings'),
-            activeColor: Colors.blue,
-            textAlign: TextAlign.center,
+              icon: Icon(Icons.add),
+              title: Text("add"),
           ),
-        ],
-      ),
+
+        ], onItemSelected: (index) {
+          setState(() {
+            _currentindex = index;
+          });
+        }
+    ))
     );
   }
 }

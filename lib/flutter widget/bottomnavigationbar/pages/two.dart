@@ -11,8 +11,9 @@ class _twoState extends State<two> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.green,
       body: Center(
-        child: Center(child: Text("number two page",style: TextStyle(fontSize: 25),)),
+        child: Expanded(child: Container(child: Text("number two page",style: TextStyle(fontSize: 25),))),
       ),
     );;
   }
