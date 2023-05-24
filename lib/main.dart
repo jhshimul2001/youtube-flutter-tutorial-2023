@@ -15,6 +15,7 @@ import 'package:youtube_flutter_project/flutter%20widget/Listview/listview_separ
 import 'package:youtube_flutter_project/flutter%20widget/NavigationRail%20widget/navigationrail.dart';
 import 'package:youtube_flutter_project/flutter%20widget/RifreshIndicator/rifreshindicator.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Sizebox%20widgt/sizebox_widget.dart';
+import 'package:youtube_flutter_project/flutter%20widget/Streambuilders/streambuilders.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Wrap%20widget/wrap.dart';
 import 'package:youtube_flutter_project/flutter%20widget/alert%20dialouge/alert.dart';
 import 'package:youtube_flutter_project/flutter%20widget/animated_container/animated_container.dart';
@@ -29,6 +30,7 @@ import 'package:youtube_flutter_project/flutter%20widget/buttonbar%20widgets/but
 import 'package:youtube_flutter_project/flutter%20widget/card/card.dart';
 import 'package:youtube_flutter_project/flutter%20widget/checkbox/checkbox.dart';
 import 'package:youtube_flutter_project/flutter%20widget/checkboxtile/checkboxlisttile.dart';
+import 'package:youtube_flutter_project/flutter%20widget/choicechip/choicechip.dart';
 import 'package:youtube_flutter_project/flutter%20widget/circleAvatar%20widget/circleavatar%20widget.dart';
 import 'package:youtube_flutter_project/flutter%20widget/clippath/clippath.dart';
 import 'package:youtube_flutter_project/flutter%20widget/column_row/column_row.dart';
@@ -54,6 +56,7 @@ import 'package:youtube_flutter_project/flutter%20widget/fittedbox/fittedbox.dar
 import 'package:youtube_flutter_project/flutter%20widget/flexible%20widget/flexible_widget.dart';
 import 'package:youtube_flutter_project/flutter%20widget/flutter%20navigation/navigation_routes_pushnamed_pushreplacement.dart';
 import 'package:youtube_flutter_project/flutter%20widget/flutter%20phone%20call/url_launcher2.dart';
+import 'package:youtube_flutter_project/flutter%20widget/flutter_video/flutter_videoplayer.dart';
 import 'package:youtube_flutter_project/flutter%20widget/futurebuider/futurebuilder.dart';
 import 'package:youtube_flutter_project/flutter%20widget/hero/hero.dart';
 import 'package:youtube_flutter_project/flutter%20widget/image%20widget/image_widget.dart';
@@ -69,10 +72,12 @@ import 'package:youtube_flutter_project/flutter%20widget/passingdata/first_page.
 import 'package:youtube_flutter_project/flutter%20widget/popupmenuItme/popupmenuitem.dart';
 import 'package:youtube_flutter_project/flutter%20widget/radio%20button/radio_button.dart';
 import 'package:youtube_flutter_project/flutter%20widget/radioListtile/radiolisttile.dart';
+import 'package:youtube_flutter_project/flutter%20widget/readmore/readmore.dart';
 import 'package:youtube_flutter_project/flutter%20widget/richtext/richtext.dart';
 import 'package:youtube_flutter_project/flutter%20widget/setstate/setstate.dart';
 import 'package:youtube_flutter_project/flutter%20widget/simple%20form/simple_form.dart';
 import 'package:youtube_flutter_project/flutter%20widget/singlechildScrolview%20and%20listview%20widget/singlechild%20and%20listview.dart';
+import 'package:youtube_flutter_project/flutter%20widget/slidebar/slidebar.dart';
 import 'package:youtube_flutter_project/flutter%20widget/slider/slider.dart';
 import 'package:youtube_flutter_project/flutter%20widget/sliverappbar/sliverappbar.dart';
 import 'package:youtube_flutter_project/flutter%20widget/snackbar/snackbar.dart';
@@ -91,7 +96,6 @@ import 'package:youtube_flutter_project/flutter%20widget/url%20launcher/url%20la
 import 'package:youtube_flutter_project/flutter_10_ui/1st_ui/stack_image.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/2nd%20ui/propile.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/3rd%20ui/tiktok_ui.dart';
-import 'package:youtube_flutter_project/flutter_10_ui/4th%20ui%20cal/calculator.dart';
 import 'flutter widget/Background Image/backgroumd_image.dart';
 import 'flutter widget/Clipoval widget/clipoval.dart';
 import 'flutter widget/Cliprrect widget/cliprrect.dart';
@@ -1242,6 +1246,62 @@ class _HomeState extends State<Home> {
                 ),
               ),
 
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( ReadMores())));
+                  },
+                  child: Text("ReadMores"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Slidebars())));
+                  },
+                  child: Text("Slidebars"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Choicechip())));
+                  },
+                  child: Text("Choicechip"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Streambuilders())));
+                  },
+                  child: Text("Streambuilders"),
+                  color: Colors.green,
+                ),
+              ),
+
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Videoplayers())));
+                  },
+                  child: Text("Videoplayers"),
+                  color: Colors.green,
+                ),
+              ),
+
 
 
 
@@ -1297,26 +1357,6 @@ class _HomeState extends State<Home> {
                 ),
               ),
               SizedBox(height: 20,),
-
-              Padding(
-                padding: EdgeInsets.only(left: 60.0,right: 60.0),
-                child: MaterialButton(color: Colors.white,
-                  hoverColor: Colors.grey,
-                  splashColor: Colors.greenAccent,
-                  height: 60,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15))
-                  ),
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>Calculator()));
-                  },
-                  child: Text("Tiktok ui",style:TextStyle(fontSize: 24)),
-                ),
-              ),
-              SizedBox(height: 20,),
-
-
-
 
             ],
           ),
