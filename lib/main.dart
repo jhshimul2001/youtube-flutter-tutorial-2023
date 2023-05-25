@@ -56,6 +56,7 @@ import 'package:youtube_flutter_project/flutter%20widget/fittedbox/fittedbox.dar
 import 'package:youtube_flutter_project/flutter%20widget/flexible%20widget/flexible_widget.dart';
 import 'package:youtube_flutter_project/flutter%20widget/flutter%20navigation/navigation_routes_pushnamed_pushreplacement.dart';
 import 'package:youtube_flutter_project/flutter%20widget/flutter%20phone%20call/url_launcher2.dart';
+import 'package:youtube_flutter_project/flutter%20widget/flutter_svg/flutter_svg.dart';
 import 'package:youtube_flutter_project/flutter%20widget/flutter_video/flutter_videoplayer.dart';
 import 'package:youtube_flutter_project/flutter%20widget/futurebuider/futurebuilder.dart';
 import 'package:youtube_flutter_project/flutter%20widget/hero/hero.dart';
@@ -95,7 +96,7 @@ import 'package:youtube_flutter_project/flutter%20widget/types%20of%20button/but
 import 'package:youtube_flutter_project/flutter%20widget/url%20launcher/url%20launcher.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/1st_ui/stack_image.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/2nd%20ui/propile.dart';
-import 'package:youtube_flutter_project/flutter_10_ui/3rd%20ui/tiktok_ui.dart';
+import 'package:youtube_flutter_project/flutter_10_ui/3rd%20ui%20login%20ui/demo%20ui.dart';
 import 'flutter widget/Background Image/backgroumd_image.dart';
 import 'flutter widget/Clipoval widget/clipoval.dart';
 import 'flutter widget/Cliprrect widget/cliprrect.dart';
@@ -106,6 +107,7 @@ import 'flutter widget/flutter connectivity/flutter_connectivity.dart';
 import 'flutter widget/flutterlogu widget/flutterlogu.dart';
 import 'flutter widget/layout_buider/layout_buider.dart';
 import 'flutter widget/spacer widget/spacer widget.dart';
+import 'flutter_10_ui/4th ui Diary App UI Design/homescreen.dart';
 
 
 
@@ -1303,6 +1305,18 @@ class _HomeState extends State<Home> {
               ),
 
 
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( SvgPictures())));
+                  },
+                  child: Text("SvgPictures"),
+                  color: Colors.green,
+                ),
+              ),
+
+
 
 
 
@@ -1341,6 +1355,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               SizedBox(height: 20,),
+
               Padding(
                 padding: EdgeInsets.only(left: 60.0,right: 60.0),
                 child: MaterialButton(color: Colors.white,
@@ -1351,9 +1366,26 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.all(Radius.circular(15))
                   ),
                   onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>Tiktokui()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) =>LoginScreen()));
                   },
-                  child: Text("Tiktok ui",style:TextStyle(fontSize: 24)),
+                  child: Text("LoginScreen ui",style:TextStyle(fontSize: 24)),
+                ),
+              ),
+              SizedBox(height: 20,),
+
+              Padding(
+                padding: EdgeInsets.only(left: 60.0,right: 60.0),
+                child: MaterialButton(color: Colors.white,
+                  hoverColor: Colors.grey,
+                  splashColor: Colors.greenAccent,
+                  height: 60,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))
+                  ),
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) =>DiaryAppUi()));
+                  },
+                  child: Text("DiaryAppUi",style:TextStyle(fontSize: 24)),
                 ),
               ),
               SizedBox(height: 20,),

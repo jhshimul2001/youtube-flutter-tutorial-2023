@@ -12,21 +12,20 @@ class _SlidebarsState extends State<Slidebars> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: SlideAction(
-          innerColor: Colors.blue,
-          outerColor: Colors.blue.shade100,
-          borderRadius: 20,
-          sliderButtonIcon: Icon(
-            Icons.lock,
-            color: Colors.white,
-          ),
-          text: 'slide to unlock',
-          textStyle: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
-          onSubmit: () {},
-        ),
-      ),
+         body: Center(
+           child: SlideAction(
+             innerColor: Colors.blue,
+             outerColor: Colors.blue.shade100,
+             borderRadius: 20,
+             sliderButtonIcon: Icon(
+               Icons.lock,
+               color: Colors.white,
+             ),
+             text: 'Slide to unlock',
+             textStyle: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+             onSubmit: (){},
+           ),
+         ),
     );
   }
 }

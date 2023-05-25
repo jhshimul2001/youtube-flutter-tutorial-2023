@@ -10,29 +10,26 @@ class Videoplayers extends StatefulWidget {
 }
 
 class _VideoplayersState extends State<Videoplayers> {
-  
+
   late VideoPlayerController _videoPlayerController;
-  late CustomVideoPlayerController _customVideoPlayerController;
-  
+ late CustomVideoPlayerController _customVideoPlayerController;
   @override
   void initState() {
     _videoPlayerController = VideoPlayerController.network('https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4')..initialize().then((value) => setState((){}));
-    _customVideoPlayerController = CustomVideoPlayerController(
-      context: context,
-      videoPlayerController: _videoPlayerController,
+    _customVideoPlayerController = CustomVideoPlayerController(context: context, videoPlayerController: _videoPlayerController,
       customVideoPlayerSettings: CustomVideoPlayerSettings(
         placeholderWidget: Center(
           child: CircularProgressIndicator(),
         ),
-        // settingsButtonAvailable: true,
-        // deviceOrientationsAfterFullscreen: [
-        //   DeviceOrientation.portraitUp
-        // ]
+        settingsButtonAvailable: true,
+        deviceOrientationsAfterFullscreen: [
+          DeviceOrientation.portraitUp
+        ]
       ),
     );
-
     super.initState();
   }
+
   @override
   void dispose() {
     _customVideoPlayerController.dispose();
@@ -44,7 +41,7 @@ class _VideoplayersState extends State<Videoplayers> {
     return Padding(
       padding:  EdgeInsets.all(5.0),
       child: Scaffold(
-          body: CustomVideoPlayer(customVideoPlayerController: _customVideoPlayerController),
+         body: CustomVideoPlayer(customVideoPlayerController: _customVideoPlayerController,),
       ),
     );
   }
