@@ -23,95 +23,103 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Login',
-                    style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold,fontSize: 30)),
-                Text('Login to continue',
-                    style: TextStyle(color: Colors.white54,fontSize: 20))
+                Text(
+                  'Login',
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+                Text(
+                  'login to continue',
+                  style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.white.withOpacity(0.5)),
+                ),
               ],
             ),
           ),
+
+
           Expanded(
-            child: Container(
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(30),
-                      topLeft: Radius.circular(30))),
-              child: ListView(
-                padding:  EdgeInsets.all(20),
-                children: [
-                   SizedBox(height: 20),
-                  Container(
-                    padding:  EdgeInsets.symmetric(horizontal: 15),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                          BoxShadow(
-                              offset:  Offset(0, 5),
-                              color: Colors.green.withOpacity(0.2),
-                              spreadRadius: 5,
-                              blurRadius: 10
-                          )
-                        ]),
-                    child: TextField(
-                      decoration: InputDecoration(
-                          hintText: 'Email', border: InputBorder.none),
-                    ),
+              child: Container(
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30),
+                    topRight: Radius.circular(30))),
+            child: ListView(
+              padding: EdgeInsets.all(20),
+              children: [
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.green.withOpacity(0.3),
+                            offset: Offset(0, 5),
+                            spreadRadius: 5,
+                            blurRadius: 10),
+                      ]),
+                  child: TextField(
+                    decoration: InputDecoration(
+                        hintText: 'Email', border: InputBorder.none),
                   ),
-                  SizedBox(height: 15),
-                  Container(
-                    padding:  EdgeInsets.symmetric(horizontal: 15),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                          BoxShadow(
-                              offset: Offset(0, 5),
-                              color: Colors.green.withOpacity(.2),
-                              spreadRadius: 5,
-                              blurRadius: 10)
-                        ]),
-                    child: TextField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                          hintText: 'Password', border: InputBorder.none),
-                    ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.green.withOpacity(0.3),
+                            offset: Offset(0, 5),
+                            spreadRadius: 5,
+                            blurRadius: 10),
+                      ]),
+                  child: TextField(
+                    obscureText: true,
+                    // obscuringCharacter: '#',
+                    decoration: InputDecoration(
+                        hintText: 'Password', border: InputBorder.none),
                   ),
-                  Align(
-                    alignment: AlignmentDirectional.centerEnd,
+                ),
+                Align(
+                    alignment: Alignment.centerRight,
                     child: TextButton(
-                        onPressed: () {},
-                        child:  Text('Forgot password?')),
-                  ),
-                   SizedBox(height: 10),
-
-                  ElevatedButton(
+                        onPressed: () {}, child: Text("Forgotten password"))),
+                SizedBox(
+                  height: 10,
+                ),
+                ElevatedButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> profiledemo()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>profiledemo() ));
                     },
-                    style: ElevatedButton.styleFrom(
-                        padding:  EdgeInsets.all(15)),
-                    child:  Text('Login',style: TextStyle(fontSize: 18),),
-                  ),
-                   SizedBox(height: 20),
-
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-
-                      Text("Don't Have an account?"),
-                      TextButton(
-                          onPressed: () {},
-                          child:  Text('Create account'))
-
-                    ],
-                  )
-                ],
-              ),
+                    child: Text(
+                      "Login",
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                    )),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Don't Have an account?"),
+                    TextButton(onPressed: (){}, child: Text("Create account"))
+                  ],
+                )
+              ],
             ),
-          )
+          ))
         ],
       ),
     );

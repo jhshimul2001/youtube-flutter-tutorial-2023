@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_flutter_project/flutter%20widget/Animated_text_kit/animated_text_kit.dart';
+import 'package:youtube_flutter_project/flutter%20widget/Auto%20size%20text/auto_size_text.dart';
 import 'package:youtube_flutter_project/flutter%20widget/ContraintBox/constraintbox.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Curved%20navigation%20bar%20flutter/curved_navigation.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Datatable%20widget/datatable.dart';
@@ -20,6 +22,8 @@ import 'package:youtube_flutter_project/flutter%20widget/Wrap%20widget/wrap.dart
 import 'package:youtube_flutter_project/flutter%20widget/alert%20dialouge/alert.dart';
 import 'package:youtube_flutter_project/flutter%20widget/animated_container/animated_container.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Animated%20navy%20bar/animated_nav.dart';
+import 'package:youtube_flutter_project/flutter%20widget/animated_crossfade/animated_crossfade.dart';
+import 'package:youtube_flutter_project/flutter%20widget/animated_opacity/animated_opacity.dart';
 import 'package:youtube_flutter_project/flutter%20widget/appbar/appbar.dart';
 import 'package:youtube_flutter_project/flutter%20widget/aspectratio%20widget/aspectratio.dart';
 import 'package:youtube_flutter_project/flutter%20widget/autocompleted/autocompleted.dart';
@@ -76,6 +80,7 @@ import 'package:youtube_flutter_project/flutter%20widget/radioListtile/radiolist
 import 'package:youtube_flutter_project/flutter%20widget/readmore/readmore.dart';
 import 'package:youtube_flutter_project/flutter%20widget/richtext/richtext.dart';
 import 'package:youtube_flutter_project/flutter%20widget/setstate/setstate.dart';
+import 'package:youtube_flutter_project/flutter%20widget/shared%20Preference/shared_preperence.dart';
 import 'package:youtube_flutter_project/flutter%20widget/simple%20form/simple_form.dart';
 import 'package:youtube_flutter_project/flutter%20widget/singlechildScrolview%20and%20listview%20widget/singlechild%20and%20listview.dart';
 import 'package:youtube_flutter_project/flutter%20widget/slidebar/slidebar.dart';
@@ -92,6 +97,7 @@ import 'package:youtube_flutter_project/flutter%20widget/table%20widget/table.da
 import 'package:youtube_flutter_project/flutter%20widget/toast/toast.dart';
 import 'package:youtube_flutter_project/flutter%20widget/tooltip/tooltip.dart';
 import 'package:youtube_flutter_project/flutter%20widget/transform/transform.dart';
+import 'package:youtube_flutter_project/flutter%20widget/tween_animation/tween_animation.dart';
 import 'package:youtube_flutter_project/flutter%20widget/types%20of%20button/button.dart';
 import 'package:youtube_flutter_project/flutter%20widget/url%20launcher/url%20launcher.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/1st_ui/stack_image.dart';
@@ -1312,6 +1318,72 @@ class _HomeState extends State<Home> {
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>( SvgPictures())));
                   },
                   child: Text("SvgPictures"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Animated_opacity())));
+                  },
+                  child: Text("Animated_opacity"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Animated_crossfade())));
+                  },
+                  child: Text("Animated crossfade"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( TweenAnimations())));
+                  },
+                  child: Text("Tween Animations"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Shared_preference())));
+                  },
+                  child: Text("SharedPreference"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Auto_Size_Texts())));
+                  },
+                  child: Text("AutoSizeTexts"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Animated_text_kit())));
+                  },
+                  child: Text("Animated text kit"),
                   color: Colors.green,
                 ),
               ),
