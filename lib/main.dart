@@ -3,12 +3,14 @@ import 'package:youtube_flutter_project/flutter%20widget/Animated_text_kit/anima
 import 'package:youtube_flutter_project/flutter%20widget/Auto%20size%20text/auto_size_text.dart';
 import 'package:youtube_flutter_project/flutter%20widget/ContraintBox/constraintbox.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Curved%20navigation%20bar%20flutter/curved_navigation.dart';
+import 'package:youtube_flutter_project/flutter%20widget/Customscrollview/customscrollview.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Datatable%20widget/datatable.dart';
 import 'package:youtube_flutter_project/flutter%20widget/DefaultTextStyle%20widget/DefaultTextStyle.dart';
 import 'package:youtube_flutter_project/flutter%20widget/FractionallySizedbox/fractionallysizedbox.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Gridview%20widget/Gridview.count/gridview_count.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Gridview%20widget/Gridview_buider/gridbiew_buider.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Gridview%20widget/gridview/gridview.dart';
+import 'package:youtube_flutter_project/flutter%20widget/IndexedStack/indexedstack.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Interactive%20Viewer%20Widget/interactiveviwer.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Listview/Listview%20builder/listview_builders.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Listview/dynamic%20listview/dynamic_listview.dart';
@@ -18,6 +20,7 @@ import 'package:youtube_flutter_project/flutter%20widget/NavigationRail%20widget
 import 'package:youtube_flutter_project/flutter%20widget/RifreshIndicator/rifreshindicator.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Sizebox%20widgt/sizebox_widget.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Streambuilders/streambuilders.dart';
+import 'package:youtube_flutter_project/flutter%20widget/Togglebutton/togglebutton.dart';
 import 'package:youtube_flutter_project/flutter%20widget/Wrap%20widget/wrap.dart';
 import 'package:youtube_flutter_project/flutter%20widget/alert%20dialouge/alert.dart';
 import 'package:youtube_flutter_project/flutter%20widget/animated_container/animated_container.dart';
@@ -36,6 +39,7 @@ import 'package:youtube_flutter_project/flutter%20widget/checkbox/checkbox.dart'
 import 'package:youtube_flutter_project/flutter%20widget/checkboxtile/checkboxlisttile.dart';
 import 'package:youtube_flutter_project/flutter%20widget/choicechip/choicechip.dart';
 import 'package:youtube_flutter_project/flutter%20widget/circleAvatar%20widget/circleavatar%20widget.dart';
+import 'package:youtube_flutter_project/flutter%20widget/circular,rotatebox/circular_rotate.dart';
 import 'package:youtube_flutter_project/flutter%20widget/clippath/clippath.dart';
 import 'package:youtube_flutter_project/flutter%20widget/column_row/column_row.dart';
 import 'package:youtube_flutter_project/flutter%20widget/container/container.dart';
@@ -44,41 +48,53 @@ import 'package:youtube_flutter_project/flutter%20widget/cupertinoactionsheet/cu
 import 'package:youtube_flutter_project/flutter%20widget/cupertinoactivityIndicator/cupertinoactivityindicator.dart';
 import 'package:youtube_flutter_project/flutter%20widget/cupertinoalertdialouge/cupertinoalertdialouge.dart';
 import 'package:youtube_flutter_project/flutter%20widget/cupertinobutton/cupertinobutton.dart';
+import 'package:youtube_flutter_project/flutter%20widget/custompaint/custompaint.dart';
 import 'package:youtube_flutter_project/flutter%20widget/date_format/date_format.dart';
 import 'package:youtube_flutter_project/flutter%20widget/date_time/date_time.dart';
 import 'package:youtube_flutter_project/flutter%20widget/datepicker/date_picker.dart';
 import 'package:youtube_flutter_project/flutter%20widget/dismissible/dismissible.dart';
 import 'package:youtube_flutter_project/flutter%20widget/divider%20and%20verticaldivider%20widget/divider.dart';
 import 'package:youtube_flutter_project/flutter%20widget/divider%20and%20verticaldivider%20widget/verticaldivider.dart';
+import 'package:youtube_flutter_project/flutter%20widget/draggableScrollsheet/draggablescrollsheet.dart';
 import 'package:youtube_flutter_project/flutter%20widget/drawer/drawer.dart';
 import 'package:youtube_flutter_project/flutter%20widget/dropdown/dropdown.dart';
+import 'package:youtube_flutter_project/flutter%20widget/dropdowntextfield/dropdowntextfield.dart';
 import 'package:youtube_flutter_project/flutter%20widget/expanded%20widget/expanded.dart';
 import 'package:youtube_flutter_project/flutter%20widget/expension_tile/expansion_tile.dart';
 import 'package:youtube_flutter_project/flutter%20widget/expensionpanellist/expensionpenellist.dart';
+import 'package:youtube_flutter_project/flutter%20widget/fadeinimage/fadeinimage.dart';
 import 'package:youtube_flutter_project/flutter%20widget/faicon/font_awesome.dart';
 import 'package:youtube_flutter_project/flutter%20widget/fittedbox/fittedbox.dart';
 import 'package:youtube_flutter_project/flutter%20widget/flexible%20widget/flexible_widget.dart';
 import 'package:youtube_flutter_project/flutter%20widget/flutter%20navigation/navigation_routes_pushnamed_pushreplacement.dart';
 import 'package:youtube_flutter_project/flutter%20widget/flutter%20phone%20call/url_launcher2.dart';
+import 'package:youtube_flutter_project/flutter%20widget/flutter%20webview/flutter%20webview.dart';
 import 'package:youtube_flutter_project/flutter%20widget/flutter_svg/flutter_svg.dart';
 import 'package:youtube_flutter_project/flutter%20widget/flutter_video/flutter_videoplayer.dart';
 import 'package:youtube_flutter_project/flutter%20widget/futurebuider/futurebuilder.dart';
 import 'package:youtube_flutter_project/flutter%20widget/hero/hero.dart';
+import 'package:youtube_flutter_project/flutter%20widget/ignorepointer/ignorepointer.dart';
 import 'package:youtube_flutter_project/flutter%20widget/image%20widget/image_widget.dart';
 import 'package:youtube_flutter_project/flutter%20widget/imagepicker/imagepicker.dart';
 import 'package:youtube_flutter_project/flutter%20widget/inkwell%20vs%20guesturedetector/ink%20vs%20gues.dart';
+import 'package:youtube_flutter_project/flutter%20widget/limitedbox/limitedbox.dart';
 import 'package:youtube_flutter_project/flutter%20widget/liquaid%20swipe/swipe.dart';
 import 'package:youtube_flutter_project/flutter%20widget/listtile/listtile.dart';
 import 'package:youtube_flutter_project/flutter%20widget/mediaquery%20widget/mediaquery.dart';
+import 'package:youtube_flutter_project/flutter%20widget/notificationlistener/notificationlistener.dart';
 import 'package:youtube_flutter_project/flutter%20widget/onboarding%20screen/onboarding_screen.dart';
+import 'package:youtube_flutter_project/flutter%20widget/opacity%20widget/opacity.dart';
 import 'package:youtube_flutter_project/flutter%20widget/padding%20and%20margin/padding_margin.dart';
 import 'package:youtube_flutter_project/flutter%20widget/pageview/pageview.dart';
 import 'package:youtube_flutter_project/flutter%20widget/passingdata/first_page.dart';
+import 'package:youtube_flutter_project/flutter%20widget/placeholder/placeholder.dart';
 import 'package:youtube_flutter_project/flutter%20widget/popupmenuItme/popupmenuitem.dart';
 import 'package:youtube_flutter_project/flutter%20widget/radio%20button/radio_button.dart';
 import 'package:youtube_flutter_project/flutter%20widget/radioListtile/radiolisttile.dart';
+import 'package:youtube_flutter_project/flutter%20widget/ratting%20bar/rattingbar.dart';
 import 'package:youtube_flutter_project/flutter%20widget/readmore/readmore.dart';
 import 'package:youtube_flutter_project/flutter%20widget/richtext/richtext.dart';
+import 'package:youtube_flutter_project/flutter%20widget/scrollbar/scrollbar.dart';
 import 'package:youtube_flutter_project/flutter%20widget/setstate/setstate.dart';
 import 'package:youtube_flutter_project/flutter%20widget/shared%20Preference/shared_preperence.dart';
 import 'package:youtube_flutter_project/flutter%20widget/simple%20form/simple_form.dart';
@@ -86,6 +102,7 @@ import 'package:youtube_flutter_project/flutter%20widget/singlechildScrolview%20
 import 'package:youtube_flutter_project/flutter%20widget/slidebar/slidebar.dart';
 import 'package:youtube_flutter_project/flutter%20widget/slider/slider.dart';
 import 'package:youtube_flutter_project/flutter%20widget/sliverappbar/sliverappbar.dart';
+import 'package:youtube_flutter_project/flutter%20widget/sliverlist/sliverlist.dart';
 import 'package:youtube_flutter_project/flutter%20widget/snackbar/snackbar.dart';
 import 'package:youtube_flutter_project/flutter%20widget/splash_screen/splash_screen.dart';
 import 'package:youtube_flutter_project/flutter%20widget/stack/stack.dart';
@@ -100,6 +117,7 @@ import 'package:youtube_flutter_project/flutter%20widget/transform/transform.dar
 import 'package:youtube_flutter_project/flutter%20widget/tween_animation/tween_animation.dart';
 import 'package:youtube_flutter_project/flutter%20widget/types%20of%20button/button.dart';
 import 'package:youtube_flutter_project/flutter%20widget/url%20launcher/url%20launcher.dart';
+import 'package:youtube_flutter_project/flutter%20widget/visibility/visibility.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/1st_ui/stack_image.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/2nd%20ui/propile.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/3rd%20ui%20login%20ui/demo%20ui.dart';
@@ -121,7 +139,9 @@ import 'flutter_10_ui/4th ui Diary App UI Design/homescreen.dart';
 
 
 void main() {
+ WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
@@ -504,7 +524,7 @@ class _HomeState extends State<Home> {
                 padding: EdgeInsets.only(top: 30,left: 100,right: 100),
                 child: MaterialButton(
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Imagepickers()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>ImagePickers()));
                   },
                   child: Text("Imagepickers"),
                   color: Colors.green,
@@ -1387,6 +1407,206 @@ class _HomeState extends State<Home> {
                   color: Colors.green,
                 ),
               ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Togglebutton())));
+                  },
+                  child: Text("Togglebutton"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( RattingBars())));
+                  },
+                  child: Text("RattingBars"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Ignorepointers())));
+                  },
+                  child: Text("Ignorepointers"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Circular_rotate_dragable())));
+                  },
+                  child: Text("Circular_rotate_dragable"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( CustomScrollcviews())));
+                  },
+                  child: Text("CustomScrollcviews"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Scrollbars())));
+                  },
+                  child: Text("Scrollbars"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( LimitedBoxes())));
+                  },
+                  child: Text("LimitedBoxes"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( DraggableScrollshets())));
+                  },
+                  child: Text("DraggableScrollshets"),
+                  color: Colors.green,
+                ),
+              ),
+
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( NotificationListeners())));
+                  },
+                  child: Text("NotificationListeners"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Visibilitys())));
+                  },
+                  child: Text("Visibilitys"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Custom())));
+                  },
+                  child: Text("Custompaint"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Opacitys())));
+                  },
+                  child: Text("Opacitys"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( DropDownTextfield())));
+                  },
+                  child: Text("DropDownTextfield"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Sliverlists())));
+                  },
+                  child: Text("Sliverlists"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Placeholders())));
+                  },
+                  child: Text("Placeholders"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Flutterwebviews())));
+                  },
+                  child: Text("Flutterwebview"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( IndexedStacks())));
+                  },
+                  child: Text("IndexedStacks"),
+                  color: Colors.green,
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Fadeinimages())));
+                  },
+                  child: Text("Fadeinimages"),
+                  color: Colors.green,
+                ),
+              ),
+
 
 
 

@@ -51,23 +51,23 @@ class _Animated_text_kitState extends State<Animated_text_kit> {
       //   ),
       // ),
 
-      // body: Center(
-      //   child: Row(
-      //     mainAxisSize: MainAxisSize.min,
-      //     children: [
-      //       DefaultTextStyle(
-      //         style: TextStyle(fontSize: 50, color: Colors.red),
-      //         child: AnimatedTextKit(animatedTexts: [
-      //           FadeAnimatedText("flutter"),
-      //           FadeAnimatedText("With"),
-      //           FadeAnimatedText("Shimul"),
-      //           FadeAnimatedText("Subscribe"),
-      //           FadeAnimatedText("like and share"),
-      //         ]),
-      //       )
-      //     ],
-      //   ),
-      // ),
+      body: Center(
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            DefaultTextStyle(
+              style: TextStyle(fontSize: 50, color: Colors.red),
+              child: AnimatedTextKit(animatedTexts: [
+                FadeAnimatedText("flutter"),
+                FadeAnimatedText("With"),
+                FadeAnimatedText("Shimul"),
+                FadeAnimatedText("Subscribe"),
+                FadeAnimatedText("like and share"),
+              ]),
+            )
+          ],
+        ),
+      ),
 
       // body: Center(
       //   child: Row(
