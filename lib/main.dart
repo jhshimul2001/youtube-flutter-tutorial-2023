@@ -117,6 +117,7 @@ import 'package:youtube_flutter_project/flutter%20widget/transform/transform.dar
 import 'package:youtube_flutter_project/flutter%20widget/tween_animation/tween_animation.dart';
 import 'package:youtube_flutter_project/flutter%20widget/types%20of%20button/button.dart';
 import 'package:youtube_flutter_project/flutter%20widget/url%20launcher/url%20launcher.dart';
+import 'package:youtube_flutter_project/flutter%20widget/user%20input%20and%20fromvalidation/userinput_fromvalidation_textfromfield.dart';
 import 'package:youtube_flutter_project/flutter%20widget/visibility/visibility.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/1st_ui/stack_image.dart';
 import 'package:youtube_flutter_project/flutter_10_ui/2nd%20ui/propile.dart';
@@ -151,9 +152,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.cyan),
-      color: Colors.green,
       home: Home(),
+      theme: ThemeData(
+        brightness: Brightness.light
+      ),
       initialRoute: '/',
       routes: {
         '/first':(context)=>firstscreen(),
@@ -1606,6 +1608,18 @@ class _HomeState extends State<Home> {
                   color: Colors.green,
                 ),
               ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 30,left: 100,right: 100),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>( Fromvalidations())));
+                  },
+                  child: Text("Fromvalidations"),
+                  color: Colors.green,
+                ),
+              ),
+
 
 
 
